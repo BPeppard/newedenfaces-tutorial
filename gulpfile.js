@@ -40,7 +40,7 @@ gulp.task('vendor', function() {
 /**
  * Compile third-party dependencies separately for faster performance
  */
-gulp.task('browserify-vender', function() {
+gulp.task('browserify-vendor', function() {
   return browserify()
     .require(dependencies)
     .bundle()
