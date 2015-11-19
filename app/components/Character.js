@@ -31,7 +31,7 @@ class Character extends React.Component {
   }
 
   componentDidUpdate(prevProps) {
-    // Fetch new character data when URL path changes
+    // Fetch new character data when URL path changes.
     if (prevProps.params.id !== this.props.params.id) {
       CharacterActions.getCharacter(this.props.params.id);
     }
@@ -71,3 +71,5 @@ class Character extends React.Component {
     );
   }
 }
+
+export default Character;
